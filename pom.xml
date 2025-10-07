@@ -16,8 +16,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.release>21</maven.compiler.release>
   </properties>
 
@@ -32,45 +30,39 @@
 
   <build>
     <finalName>roshambo</finalName>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.3.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.3.1</version>
-        </plugin>
-       <plugin>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.11.0</version>
-    <configuration>
-        <release>21</release>
-    </configuration>
-</plugin>
-<plugin>
-    <artifactId>maven-clean-plugin</artifactId>
-    <version>3.3.2</version>
-</plugin>
-<plugin>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.1.2</version>
-</plugin>
-<plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.2</version>
-</plugin>
-<plugin>
-    <artifactId>maven-install-plugin</artifactId>
-    <version>3.1.0</version>
-</plugin>
-<plugin>
-    <artifactId>maven-deploy-plugin</artifactId>
-    <version>3.1.0</version>
-</plugin>
-
-    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <release>21</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.1.0</version>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
